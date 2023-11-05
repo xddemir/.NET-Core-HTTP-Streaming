@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "p9hf3SJv1GgdGyGY8M4PJdqagLMp875G44okwhN7gy6PNYo3k90qjBqJw+9OzuTl8qrW7HmRnIzVl01d8t7Ngw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\doguk\\RiderProjects\\HttpStreaming.API\\HttpStreaming.API\\HttpStreaming.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

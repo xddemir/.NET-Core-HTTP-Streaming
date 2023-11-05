@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kivLZohzcYQVWHgg9N+Y5bzViETYkhyLeHDfFmsH5es=",
+  "Source": "HttpStreaming.API",
+  "BasePath": "_content/HttpStreaming.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
