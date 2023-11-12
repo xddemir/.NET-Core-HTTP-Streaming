@@ -1,0 +1,51 @@
+﻿@page "/fetchdata"
+@using BlazorApp1.Data
+@inject CommentService CommentService
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (Comments.Count < 0)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Email</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var comment in Comments)
+        {
+            <tr>
+                <td>@comment?.Email</td>
+                <td>@comment?.Name</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Comment> Comments = new List<Comment>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await foreach (var comment in CommentService.GetCommentsAsync())
+        {
+            Comments.Add(comment);
+            await InvokeAsync(() => StateHasChanged());
+        }
+        
+        Console.WriteLine("Comment Counts: " + Comments.Count);
+    }
+}
