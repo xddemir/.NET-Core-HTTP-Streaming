@@ -79,13 +79,10 @@ public class CommentController : ControllerBase
 
     [HttpGet]
     [Route("stream/GetCommentStream")]
-    public async IAsyncEnumerable<Comment>GetCommentStream([EnumeratorCancellation]CancellationToken cancellationToken = default)
+    public async Task<IEnumerable<Comment>> GetCommentStream([EnumeratorCancellation]CancellationToken cancellationToken = default)
     {
-        for (int i = 1; i < 500; i++)
-        {
-            string requestEndpoint = $"comments/{i}";
-            yield return await _httpClient.GetFromJsonAsync<Comment>(requestEndpoint);
-        }
+        var response = await _httpClient.GetAsync($"comments");
+        return await response.Content.ReadFromJsonAsync<IEnumerable<Comment>>(cancellationToken: cancellationToken);
     }
     
     [HttpGet]
